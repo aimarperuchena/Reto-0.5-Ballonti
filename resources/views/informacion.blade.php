@@ -23,6 +23,14 @@
             <div id="inf">
                 <a href="#"><img src="imagenes/info.jpg" id="infb"></a>
             </div>
+            <div id="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><img src="imagenes/icono_menu.jpg" id="icono_menu" alt=""></button>
+            <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">Tiendas</a>
+                    <a href="#about">Ocio</a>
+                    <a href="#contact">Localizacion</a>
+                </div>    
+        </div>
         </div>
     </div>
     <div id="contenedor">
@@ -59,7 +67,7 @@
 
 
     </div>
-
+    <script src="js/js.js"></script>
     <div id="footer">
         <div id="div_img_footer">
             <img id="img_footer" src="imagenes/logo.gif">

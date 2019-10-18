@@ -36,7 +36,7 @@
 }
 
 #div_menu_titulo {
-    flex: 0 0 60%;
+    flex: 0 0 40%;
     display: flex;
     justify-content: center;
     background-color: gray;
@@ -48,11 +48,11 @@
 }
 
 #div_idiomas {
-    flex: 20%;
+    flex: 0 0 20%;
     display: flex;
     flex-direction: row;
     background-color: gray;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #div_idiomas p {
@@ -70,6 +70,60 @@
 #infb {
     width: 20%;
     height: 80%;
+}
+
+
+/*MENU DROPDOWN*/
+
+#dropdown {
+    flex: 0 0 20%;
+    justify-content: center;
+    height: 100%;
+    background-color: gray;
+}
+
+.dropbtn {
+    height: 100%;
+}
+
+#icono_menu {
+    height: 100%;
+}
+
+#myDropdown {
+    display: inline-block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 3em;
+    width: 2em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
 }
 
 

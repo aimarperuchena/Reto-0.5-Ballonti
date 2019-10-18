@@ -10,7 +10,7 @@
 <body>
     <div id="header">
         <div id="banner">
-            <img src="imagenes/ballontifeat.jpg" id="ban">
+            <img src="imagenes/fotos_ballonti/ballonti5.jpg" id="ban">
         </div>
         <div id="menu">
             <div id="div_menu_titulo">
@@ -35,13 +35,13 @@
             </div>
             <div id="etiquetas_div">
                 <div id="etiquetas">
-                    <a href="#"><img src="imagenes/tgb_logo.jpg" id="serImg"></a>
+                    <a href="#"><img src="imagenes/tgb/tgb_logo.jpg" id="serImg"></a>
                 </div>
                 <div id="etiquetas">
-                    <a href="#"><img src="imagenes/forumsport_logo.jpg" id="serImg"></a>
+                    <a href="#"><img src="imagenes/forum/forumsport_logo.jpg" id="serImg"></a>
                 </div>
                 <div id="etiquetas">
-                    <a href="#"><img src="imagenes/game_logo.jpg" id="serImg"></a>
+                    <a href="#"><img src="imagenes/game/game_logo.jpg" id="serImg"></a>
                 </div>
             </div>
         </div>
