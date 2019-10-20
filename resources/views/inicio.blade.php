@@ -1,108 +1,91 @@
+
+
 <!DOCTYPE html>
 <html>
-
-<head>
-    <link rel="stylesheet" type="text/css" href="{{url('/style/estilo.css')}}">
-
-    <title>Centro Comercial Ballonti</title>
-</head>
-
-<body>
-    <div id="header">
-        <div id="banner">
+   <head>
+      <link rel="stylesheet" type="text/css" href="style/estilo.css">
+      <script src="javascript/jquery.min.js"></script>
+      <script src="javascript/jquery.translate.js"></script>
+      <script type="text/javascript" src="javascript/jsidiomas.js"></script>
+      <title>Centro Comercial Ballonti</title>
+   </head>
+   <body>
+      <div id="header">
+         <div id="banner">
             <img src="imagenes/fotos_ballonti/ballonti5.jpg" id="ban">
-        </div>
-        <div id="menu">
-            <div id="div_menu_titulo">
-                <p id="menu_titulo">Centro Comercial Ballonti</p>
+         </div>
+         <div id="menu">
+            <div class="titulo_index">
+               <h1 class="trn" data-trn-key="titulo">Centro Comercial Ballonti</h1>
             </div>
-            <div id="div_idiomas">
-             <p id="español">Castellano</p>
-             <p id="euskera">Euskera</p>
+            <div id="idiomas">
+               <div class="div_idiomas_fotos">
+                  <img src="imagenes/españa.png" class="idiomas_fotos" onclick="cambiarEspañol()">
+               </div>
+               <div class="div_idiomas_fotos">
+                  <img src="imagenes/ikurriña.png" class="idiomas_fotos" onclick="cambiarEuskera()">
+               </div>
+               <div class="div_idiomas_fotos">
+                  <img src="imagenes/ingles.jpg" class="idiomas_fotos" onclick="cambiarIngles()">
+               </div>
             </div>
             <div id="inf">
-                <a href="#"><img src="imagenes/info.jpg" id="infb"></a>
+               <a href="informacion.html"><img src="imagenes/inf.jpg" id="infb"></a>
             </div>
-        </div>
-    </div>
-    <div id="contenedor">
-        <div id="div_introduccion">
-        <p id="txt_mensaje">VEN A BALLONTI A DISFRUTAR DE TU TIEMPO LIBRE</p>
-            <p>En Ballonti encontraras un ampli centro comercial dirigido a todas las edades, donde podras hacer tus compras en las mejores tiendas. Disponemos de un amplio sitio ocio tales como cines, boleras, txikiparks y muchos mas !!!</p>
-            <img src="/imagenes/fotos_ballonti/ballonti1.jpg" alt="">
-        </div>
-        <div id="etiquetas_general">
+         </div>
+      </div>
+      <div id="contenedor">
+         <div id="div_introduccion">
+            <p id="txt_mensaje" class="trn" data-trn-key="introduccion1">VEN A BALLONTI A DISFRUTAR DE TU TIEMPO LIBRE</p>
+            <p id="txt_mensaje2" class="trn" data-trn-key="introduccion2">En Ballonti encontraras un ampli centro comercial dirigido a todas las edades, donde podras hacer tus compras en las mejores tiendas. Disponemos de un amplio sitio ocio tales como cines, boleras, txikiparks y muchos mas !!!</p>
+         </div>
+         <div id="paginas">
             <div id="etiquetas_general_titulo">
-                <p id="titulo_general_etiquetas_texto">SERVICIOS</p>
+               <p id="titulo_general_etiquetas_texto" class="trn" data-trn-key="titulo_servicios">SERVICIOS</p>
             </div>
-            <div id="etiquetas_div">
-                <div id="etiquetas">
-                    <a href="#" id="etiqueta_imagen"><img src="imagenes/cine.jpg" id="serImg"></a>
-                    <p id="etiqueta_nombre">OCIO</p>
-
-                </div>
-                <div id="etiquetas">
-                    <a href="#" id="etiqueta_imagen"><img src="imagenes/tiendas.jpg" id="serImg"></a>
-                    <p id="etiqueta_nombre">TIENDAS</p>
-
-                </div>
-                <div id="etiquetas">
-                    <a href="#" id="etiqueta_imagen"><img src="imagenes/maps.png" id="serImg"></a>
-                    <p id="etiqueta_nombre">COMO LLEGAR</p>
-
-                </div>
+            <div id="cuadrados">
+               <div class="servicios">
+                  <a href="tiendas"><img src="imagenes/tiendas.jpg" class="serImg"></a>
+                  <p id="etiqueta_nombre" class="trn" data-trn-key="tiendas">Tiendas</p>
+               </div>
+               <div class="servicios">
+                  <a href="#"><img src="imagenes/ocio.jpg" class="serImg"></a>
+                  <p id="etiqueta_nombre" class="trn" data-trn-key="ocio">Ocio</p>
+               </div>
+               <div class="servicios">
+                  <a href="localizacion"><img src="imagenes/maps.png" class="serImg"></a>
+                  <p id="etiqueta_nombre" class="trn" data-trn-key="localizacion">Localizacion</p>
+               </div>
             </div>
-        </div>
-        <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
+         </div>
+         <div class="slideshow-container">
             <div class="mySlides fade">
-                <img src="imagenes/fotos_ballonti/ballonti1.jpg">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="imagenes/fotos_ballonti/ballonti2.jpg">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="imagenes/fotos_ballonti/ballonti3.jpg">
+               <img src="imagenes/fotos_ballonti/ballonti1.jpg" style="width:100%" class="carrImg">
             </div>
             <div class="mySlides fade">
-                <img src="imagenes/fotos_ballonti/ballonti4.jpg">
+               <img src="imagenes/fotos_ballonti/ballonti2.jpg" style="width:100%" class="carrImg">
             </div>
             <div class="mySlides fade">
-                <img src="imagenes/fotos_ballonti/ballonti5.jpg">
+               <img src="imagenes/fotos_ballonti/ballonti3.jpg" style="width:100%" class="carrImg">
             </div>
             <div class="mySlides fade">
-                <img src="imagenes/fotos_ballonti/ballonti6.jpg">
+               <img src="imagenes/fotos_ballonti/ballonti4.jpg" style="width:100%" class="carrImg">
             </div>
             <div class="mySlides fade">
-                <img src="imagenes/fotos_ballonti/ballonti7.jpg">
+               <img src="imagenes/fotos_ballonti/ballonti5.jpg" style="width:100%" class="carrImg">
             </div>
             <div class="mySlides fade">
-                <img src="imagenes/fotos_ballonti/ballonti8.jpg">
+               <img src="imagenes/fotos_ballonti/ballonti6.jpg" style="width:100%" class="carrImg">
             </div>
+         </div>
+         <br>
+         <script src="javascript/js.js"></script>
+         <div id="footer">
+            <div><img src="imagenes/fotos_ballonti/logo.gif"></div>
+            <div id="mini" class="trn" data-trn-key="footer">A sólo 10 minutos de Bilbao, C.C. Ballonti es mucho más que un espacio para realizar tus compras, es un lugar donde el tiempo de ocio se llena de emoción para toda la familia...</div>
+            <div>Tlf: (+34) 944 915 246<br>Fax:    (+34) 944 926 822<br> mail:   spain.ballonti@cbre.com</div>
+         </div>
+      </div>
+   </body>
+</html>
 
-
-        </div>
-        <br>
-
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-        <script src="js/js.js"></script>
-        <div id="footer">
-            <div id="div_img_footer">
-                <img id="img_footer" src="imagenes/logo.gif">
-            </div>
-            <p id="texto_footer_1">A sólo 10 minutos de Bilbao, C.C. Ballonti es mucho más que un espacio para realizar tus compras, es un lugar donde el tiempo de ocio se llena de emoción para toda la familia...</p>
-            <p id="texto_footer_2">Tlf: (+34) 944 915 246 <br> Fax: (+34) 944 926 822<br> Mail: spain.ballonti@cbre.com</p>
-        </div>
-
-    </div>
-</body>
-
-</html

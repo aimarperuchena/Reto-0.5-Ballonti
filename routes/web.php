@@ -1,3 +1,5 @@
+
+
 <?php
 
 /*
@@ -22,6 +24,13 @@ Route::get('tienda', function () {
     return view('tienda');
 });
 
+Route::get('localizacion',function(){
+    return view('localizacion');
+});
+
 Route::get('informacion', function () {
     return view('informacion');
+});
+Route::get('administracion', function () {
+    return view('administracion');
 });

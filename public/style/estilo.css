@@ -1,97 +1,338 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #DDDDDD;
 }
 
 #header {
     display: flex;
     flex-direction: column;
-    height: 10em;
-    justify-content: center;
-}
-
-#banner {
-    height: 60%;
-    display: flex;
-    justify-content: center;
 }
 
 #ban {
-    flex: 0 0 50%;
+    width: 100%;
     height: 100%;
 }
 
-
-/*ESTILOS DEL MENU-----------------------------------------------*/
+#banner {
+    height: 400px;
+}
 
 #menu {
     width: 100%;
-    height: 40%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: gray;
-}
-
-#div_menu_titulo {
-    flex: 0 0 40%;
-    display: flex;
-    justify-content: center;
-    background-color: gray;
-}
-
-#menu_titulo {
-    font-size: 2em;
-    background-color: gray;
-}
-
-#div_idiomas {
-    flex: 0 0 20%;
-    display: flex;
-    flex-direction: row;
-    background-color: gray;
     justify-content: space-around;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
 }
 
-#div_idiomas p {
-    background-color: gray;
+.titulo_index {
+    width: 20%;
 }
 
 #inf {
-    flex: 0 0 20%;
+    margin-top: 0.2%;
     height: 100%;
-    margin: auto;
-    background-color: gray;
+    width: 2%;
     justify-content: center;
 }
 
 #infb {
-    width: 20%;
+    width: 100%;
     height: 80%;
 }
 
-
-/*MENU DROPDOWN*/
-
-#dropdown {
-    flex: 0 0 20%;
-    justify-content: center;
-    height: 100%;
-    background-color: gray;
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+#paginas {
+    display: flex;
+    width: 70%;
+    height: 22em;
+    flex-direction: column;
+    background-color: #CDCDCD
+}
+
+.servicios {
+    height: 80%;
+    width: 20%;
+    border: solid;
+    margin: auto;
+    border-radius: 2em;
+}
+
+#cuadrados {
+    display: flex;
+    flex-direction: row;
+}
+
+.serImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.7em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.mySlides {
+    display: none;
+}
+
+.carrImg {
+    vertical-align: middle;
+    height: 30em;
+    border: solid;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    width: 90%;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+. @-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+#footer {
+    width: 100%;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#mini {
+    width: 30%;
+}
+
+#div_introduccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 60%;
+}
+
+#txt_mensaje {
+    text-align: center;
+    font-size: 2em;
+}
+
+#txt_mensaje2 {
+    width: 40em;
+}
+
+#etiquetas_general_titulo {
+    display: flex;
+    justify-content: center;
+}
+
+#titulo_general_etiquetas_texto {
+    font-size: 2em;
+}
+
+#etiqueta_nombre {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+/*Formulario*/
+
+#elegir_tienda {
+    display: flex;
+    width: 50%;
+    height: 5em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #CDCDCD;
+    border-bottom: solid;
+    border-top: solid;
+}
+
+#insertar_producto {
+    display: flex;
+    width: 50%;
+    height: 20em;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #CDCDCD;
+    border-bottom: solid;
+}
+
+#formulario_añadir {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+
+#modificar_stock {
+    display: flex;
+    width: 50%;
+    height: 10em;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #CDCDCD;
+    border-bottom: solid;
+}
+
+#formulario_modificar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+}
+
+#eliminar_producto {
+    display: flex;
+    width: 50%;
+    height: 10em;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #CDCDCD;
+}
+
+#formulario_eliminar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+}
+
+
+/*Informacion*/
+
+#imagen_informacion {
+    margin-top: 8%;
+    width: 100%;
+    height: 15em;
+    display: flex;
+    justify-content: center;
+}
+
+#texto_informacion {
+    margin: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+#horario {
+    height: 60%;
+    width: 30%;
+    border: solid;
+    margin: auto;
+}
+
+#informacion_todo {
+    display: flex;
+    width: 70%;
+    height: 50.5em;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #CDCDCD;
+}
+
+
+/*Boton menu*/
 
 .dropbtn {
-    height: 100%;
+    background-color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 3em;
+    width: 2em;
 }
 
-#icono_menu {
-    height: 100%;
-}
-
-#myDropdown {
-    display: inline-block;
+#imgMenu {
+    height: 50%;
+    width: 50%;
 }
 
 .dropdown {
@@ -127,254 +368,50 @@
 }
 
 
-/*ESTILOS DEL MENU-----------------------------------------------*/
+/*Localizacion*/
 
-
-/* ESTILO DEL CONTENEDOR-----------------*/
-
-#contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-basis: 200%;
+#mapa {
+    width: 100%;
 }
 
-
-/*INICIO INTRODUCCION*/
-
-#div_introduccion {
+#cont_loca {
     display: flex;
     width: 70%;
-    height: 100%;
+    height: 30em;
     flex-direction: column;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    background-color: #CDCDCD;
-    padding: 5%;
-    padding-bottom: 4%;
-}
-
-#txt_mensaje {
-    text-align: center;
-    font-size: 2em;
-}
-
-#etiquetas_general {
-    display: flex;
-    width: 70%;
-    height: 100%;
-    flex-direction: column;
-    margin-top: 10%;
-    margin-bottom: 20%;
-    background-color: #CDCDCD;
-    padding: 5%;
-    padding-bottom: 10%;
-    ;
-}
-
-#etiquetas_general_titulo {
-    display: flex;
-    justify-content: center;
-    padding: 5%;
-    background-color: #CDCDCD;
-}
-
-#titulo_general_etiquetas_texto {
-    font-size: 2em;
-    background-color: #CDCDCD;
-}
-
-#etiquetas_div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex: 0 0 80%;
-    background-color: #CDCDCD;
-}
-
-#etiquetas_div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: #CDCDCD;
-}
-
-#etiquetas {
-    flex: 0 0 30%;
-    border-radius: 25%;
-}
-
-#serImg {
-    width: 100%;
-    height: 100%;
-}
-
-#etiqueta_nombre {
-    text-align: center;
-    font-size: 2em;
-    background-color: #CDCDCD;
-}
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
-
-/* Hide the images by default */
-
-.mySlides {
-    display: none;
-}
-
-
-/* Next & previous buttons */
-
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-
-/* Position the "next button" to the right */
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-
-/* On hover, add a black background color with a little bit see-through */
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-/* Caption text */
-
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-
-/* Number text (1/3 etc) */
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-
-/* The dots/bullets/indicators */
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-
-/* Fading animation */
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-#footer {
-    width: 100%;
-    height: 8em;
-    background-color: gray;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    border: solid;
 }
 
-#div_img_footer {
-    display: flex;
-    margin-left: 5%;
-    flex-basis: 10%;
-    background-color: gray;
-}
-
-#img_footer {
-    flex: 0 0 25%;
-    height: 100%;
-}
-
-#texto_footer_1 {
-    flex: 0 0 40%;
-    background-color: gray;
-}
-
-#texto_footer_2 {
-    flex: 0 0 20%;
-    background-color: gray;
+#texto_mapa {
+    margin: 50px;
 }
 
 
-/*INFORMACION*/
+/* Idiomas */
 
-#div_horario {
+#idiomas {
     display: flex;
     flex-direction: row;
 }
 
-#horario {
-    flex: 0 0 25%;
+#idiomas {
+    width: 12%;
+    margin-top: 0.2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+.div_idiomas_fotos {
+    width: 4em;
+    height: 2em;
+}
+
+.idiomas_fotos {
+    width: 100%;
+    height: 100%;
+}
+
+;

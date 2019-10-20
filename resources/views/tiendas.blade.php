@@ -1,94 +1,69 @@
 <!DOCTYPE html>
-
-
+<html>
 <head>
-<link rel="stylesheet" type="text/css" href="{{url('/style/estilo.css')}}">
-
-    <title>Centro Comercial Ballonti</title>
+	<link rel="stylesheet" type="text/css" href="style/estilo.css">
+	<script src="javascript/jquery.min.js"></script>
+	<script src="javascript/jquery.translate.js"></script>
+	<script type="text/javascript" src="javascript/jsidiomas.js"></script>
+	<script src="javascript/js.js"></script>
+	<title>Informacion</title>
 </head>
-
 <body>
-    <div id="header">
-        <div id="banner">
-            <img src="imagenes/fotos_ballonti/ballonti5.jpg" id="ban">
+<div id="header">
+	<div id="banner">
+    <img src="imagenes/fotos_ballonti/ballonti5.jpg" id="ban">
+	</div>
+	<div id="menu">
+		<div class="titulo_index">
+		<h1 class="trn" data-trn-key="titulo_inf">Qué es C.C. Ballonti</h1>
+	</div>
+		<div id="idiomas">
+			<div class="div_idiomas_fotos">
+				<img src="imagenes/españa.png" class="idiomas_fotos" onclick="cambiarEspañol()">
+			</div>
+			<div class="div_idiomas_fotos">
+				<img src="imagenes/ikurriña.png" class="idiomas_fotos" onclick="cambiarEuskera()">
+			</div>
+			<div class="div_idiomas_fotos">
+				<img src="imagenes/ingles.jpg" class="idiomas_fotos" onclick="cambiarIngles()">
+			</div>
+		</div>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"><img src="imagenes/menu.jpg" id="imgMenu">
+  </button>
+  <div id="myDropdown" class="dropdown-content">
+      <a href="#home" class="trn" data-trn-key="inicio">Inicio</a>
+    <a href="#home" class="trn" data-trn-key="tiendas">Tiendas</a>
+    <a href="#about" class="trn" data-trn-key="ocio">Ocio</a>
+    <a href="#contact" class="trn" data-trn-key="localizacion">Localizacion</a>
+    <a href="#contact" class="trn" data-trn-key="administracion">Administracion</a>
+  </div>
+</div>
+
+	</div>
+</div>
+<div id="contenedor">
+	
+		
+	
+    <div id="paginas">
+		<div id="etiquetas_general_titulo">
+                <p id="titulo_general_etiquetas_texto" class="trn" data-trn-key="tiendas">TIENDAS</p>
+            </div>
+		<div id="cuadrados">
+			<div class="servicios"><a href="#"><img src="imagenes/forum/forumsport_logo.jpg" class="serImg"></a>
+			<p id="etiqueta_nombre" >Forum Sport</p></div>
+			<div class="servicios"><a href="#"><img src="imagenes/game/game_logo.jpg" class="serImg"></a>
+			<p id="etiqueta_nombre">Game</p></div>
+			<div class="servicios"><a href="#"><img src="imagenes/tgb/tgb_logo.jpg" class="serImg"></a>
+			<p id="etiqueta_nombre" >The Good Burger</p></div>
+			</div>
         </div>
-        <div id="menu">
-            <div id="div_menu_titulo">
-                <p id="menu_titulo">Centro Comercial Ballonti</p>
-            </div>
-            <div id="div_idiomas">
-            <p id="español">Castellano</p>
-            <p id="euskera">Euskera</p>
-            </div>
-            <div id="inf">
-                <a href="#"><img src="imagenes/info.jpg" id="infb"></a>
-            </div>
-        </div>
-    </div>
-    <div id="contenedor">
-        <div id="div_texto_introduccion">
-
-        </div>
-        <div id="etiquetas_general">
-            <div id="etiquetas_general_titulo">
-                <p id="titulo_general_etiquetas_texto">TIENDAS</p>
-            </div>
-            <div id="etiquetas_div">
-                <div id="etiquetas">
-                    <a href="#"><img src="imagenes/tgb/tgb_logo.jpg" id="serImg"></a>
-                </div>
-                <div id="etiquetas">
-                    <a href="#"><img src="imagenes/forum/forumsport_logo.jpg" id="serImg"></a>
-                </div>
-                <div id="etiquetas">
-                    <a href="#"><img src="imagenes/game/game_logo.jpg" id="serImg"></a>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-
-                <img src="imagenes/forum/forum4.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
-            </div>
-
-            <div class="mySlides fade">
-
-                <img src="imagenes/tgb7.jpg" style="width:100%">
-                <div class="text">Caption Two</div>
-            </div>
-
-            <div class="mySlides fade">
-
-                <img src="imagenes/game3.jpg" style="width:100%">
-                <div class="text">Caption Three</div>
-            </div>
-
-
-        </div>
-        <br>
-
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-        <script src="js/js.js"></script>
         <div id="footer">
-            <div id="div_img_footer">
-                <img id="img_footer" src="imagenes/logo.gif">
-            </div>
-            <p id="texto_footer_1">A sólo 10 minutos de Bilbao, C.C. Ballonti es mucho más que un espacio para realizar tus compras, es un lugar donde el tiempo de ocio se llena de emoción para toda la familia...</p>
-            <p id="texto_footer_2">Tlf: (+34) 944 915 246 <br> Fax: (+34) 944 926 822<br> Mail: spain.ballonti@cbre.com</p>
-        </div>
-
-    </div>
+		<div><img src="imagenes/fotos_ballonti/logo.gif"></div>
+		<div id="mini" class="trn" data-trn-key="footer">A sólo 10 minutos de Bilbao, C.C. Ballonti es mucho más que un espacio para realizar tus compras, es un lugar donde el tiempo de ocio se llena de emoción para toda la familia...</div>
+		<div>Tlf: (+34) 944 915 246<br>Fax:    (+34) 944 926 822<br> mail:   spain.ballonti@cbre.com</div>
+	</div>
+</div>
 </body>
-
-</html
+</html>
