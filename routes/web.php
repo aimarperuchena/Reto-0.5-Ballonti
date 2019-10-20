@@ -42,3 +42,5 @@ Route::get('productos', function () {
 Route::get('productos/{id}', function (){
     
 });
+
+Route::get('listartiendas', 'TiendasController@listarTiendas');
