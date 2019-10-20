@@ -34,3 +34,11 @@ Route::get('informacion', function () {
 Route::get('administracion', function () {
     return view('administracion');
 });
+
+Route::get('productos', function () {
+    return view('productos');
+});
+
+Route::get('productos/{id}', function (){
+    
+});
