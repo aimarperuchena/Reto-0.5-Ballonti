@@ -50,7 +50,7 @@
             </div>
             <div id="div_producto">
                 <div id="div_imagen_producto">
-                    <img src="imagenes/productos_forum/orbea_sport_bici.jpg" alt="">
+                    <img src="/imagenes/forum/orbea_sport_bici.jpg" alt="">
                 </div>
                 <div id="detalles_producto">
                     <p>Nombre: <span id="nombre_producto">Bicicleta de montaña</span></p>
@@ -62,7 +62,6 @@
             </div>
             <div id="div_producto">
                 <div id="div_imagen_producto">
-                    <img src="imagenes/forum/orbea_sport_bici.jpg" alt="">
                 </div>
                 <div id="detalles_producto">
                     <p>Nombre: <span id="nombre_producto">Bicicleta de montaña</span></p>
@@ -72,9 +71,9 @@
                     <p>Link: <a href="google.com">Enlace</a></p>
                 </div>
             </div>
+
             <div id="div_producto">
                 <div id="div_imagen_producto">
-                    <img src="imagenes/productos_forum/orbea_sport_bici.jpg" alt="">
                 </div>
                 <div id="detalles_producto">
                     <p>Nombre: <span id="nombre_producto">Bicicleta de montaña</span></p>
@@ -84,6 +83,7 @@
                     <p>Link: <a href="google.com">Enlace</a></p>
                 </div>
             </div>
+            
 
         </div>
 	

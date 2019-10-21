@@ -417,7 +417,6 @@ ul {
 #div_general_productos {
     display: flex;
     width: 70%;
-    height: 100%;
     flex-direction: column;
     margin-top: 10%;
     margin-bottom: 20%;
@@ -441,7 +440,6 @@ ul {
     flex-direction: row;
     flex: 0 0 80%;
     justify-content: space-between;
-    height: 10%;
     background-color: red;
 }
 
