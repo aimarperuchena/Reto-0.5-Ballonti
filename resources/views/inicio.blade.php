@@ -6,6 +6,7 @@
       <link rel="stylesheet" type="text/css" href="style/estilo.css">
       <script src="javascript/jquery.min.js"></script>
       <script src="javascript/jquery.translate.js"></script>
+      <script src="javascript/efectos.js"></script>
       <script type="text/javascript" src="javascript/jsidiomas.js"></script>
       <title>Centro Comercial Ballonti</title>
    </head>

@@ -48,18 +48,23 @@
             <div id="div_nombre_tienda">
                 <p id="nombre_tienda">Forum Spot</p>
             </div>
+
+            @foreach($productos as $producto)
             <div id="div_producto">
                 <div id="div_imagen_producto">
-                    <img src="/imagenes/forum/orbea_sport_bici.jpg" alt="">
+                    <img src="{{$producto->link_imagen}}" alt="">
                 </div>
                 <div id="detalles_producto">
-                    <p>Nombre: <span id="nombre_producto">Bicicleta de montaña</span></p>
-                    <p>Precio: <span id="precio_producto">4000 €</span></p>
-                    <p>Descripción: <span id="descipcion_producto">Bicicleta de montaña de alta gama con cuadro de carbono</span></p>
-                    <p>Stock: <span id="stock_producto">10</span></p>
-                    <p>Link: <a href="google.com">Enlace</a></p>
+                    <p>Nombre: <span id="nombre_producto">{{$producto->nombre}}</span></p>
+                    <p>Precio: <span id="precio_producto">{{$producto->precio}}</span></p>
+                    <p>Descripción: <span id="descipcion_producto">{{$producto->descripcion}}</span></p>
+                    <p>Stock: <span id="stock_producto">{{$producto->stock}}</span></p>
+                    <p>Link: <a href="google.com">{{$producto->link}}</a></p>
                 </div>
             </div>
+				<option value="{{$tienda->id}}">{{$tienda->nombre}}</option>
+			@endforeach
+            
             <div id="div_producto">
                 <div id="div_imagen_producto">
                 </div>

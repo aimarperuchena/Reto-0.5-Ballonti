@@ -43,8 +43,8 @@ Route::get('productos', function () {
     return view('productos');
 });
 
-Route::get('productos/{id}', function (){
+Route::get('productos/{id}','ProductosController@listarProductos');
     
-});
+
 
 Route::get('listartiendas', 'TiendasController@verTiendas');

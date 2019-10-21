@@ -440,7 +440,8 @@ ul {
     flex-direction: row;
     flex: 0 0 80%;
     justify-content: space-between;
-    background-color: red;
+    background-color: #B2B2B2;
+    margin-bottom: 3%;
 }
 
 #div_imagen_producto {
