@@ -35,9 +35,9 @@ Route::get('localizacion',function(){
 Route::get('informacion', function () {
     return view('informacion');
 });
-Route::get('administracion', function () {
-    return view('administracion');
-});
+Route::get('administracion','TiendasController@verTiendas');
+    
+
 
 Route::get('productos', function () {
     return view('productos');
@@ -47,4 +47,4 @@ Route::get('productos/{id}', function (){
     
 });
 
-Route::get('listartiendas', 'TiendasController@listarTiendas');
+Route::get('listartiendas', 'TiendasController@verTiendas');

@@ -12,4 +12,10 @@ class TiendasController extends Controller
         $tiendas = TiendasModel::All();
         return $tiendas->toJson();
     }
+
+    public function verTiendas(){
+        
+        $tiendas = TiendasModel::all();
+        return view('administracion',compact('tiendas'));
+    }
 }

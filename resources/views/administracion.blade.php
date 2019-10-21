@@ -45,9 +45,10 @@
 <div id="contenedor">
 	<div id="elegir_tienda">
 		<select>
-			<option value="Forum Sport">Forum Sport</option>
-			<option value="Game">Game</option>
-			<option value="TGB">TGB</option>
+			@foreach($tiendas as $tienda)
+				<option value="{{$tienda->id}}">{{$tienda->nombre}}</option>
+			@endforeach
+			
 		</select>
 	</div>
 	<div id="insertar_producto">
