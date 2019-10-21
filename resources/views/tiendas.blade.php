@@ -32,11 +32,11 @@
   <button onclick="myFunction()" class="dropbtn"><img src="imagenes/menu.jpg" id="imgMenu">
   </button>
   <div id="myDropdown" class="dropdown-content">
-      <a href="#home" class="trn" data-trn-key="inicio">Inicio</a>
-    <a href="#home" class="trn" data-trn-key="tiendas">Tiendas</a>
-    <a href="#about" class="trn" data-trn-key="ocio">Ocio</a>
-    <a href="#contact" class="trn" data-trn-key="localizacion">Localizacion</a>
-    <a href="#contact" class="trn" data-trn-key="administracion">Administracion</a>
+      <a href="inicio" class="trn" data-trn-key="inicio">Inicio</a>
+    <a href="tiendas" class="trn" data-trn-key="tiendas">Tiendas</a>
+    <a href="ocio" class="trn" data-trn-key="ocio">Ocio</a>
+    <a href="localizacion" class="trn" data-trn-key="localizacion">Localizacion</a>
+    <a href="administracion" class="trn" data-trn-key="administracion">Administracion</a>
   </div>
 </div>
 
