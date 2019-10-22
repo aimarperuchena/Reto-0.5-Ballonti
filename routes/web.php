@@ -46,7 +46,13 @@ Route::get('administracion','TiendasController@verTiendas');
 
 
 Route::get('productos','ProductosController@index');
-Route::get('productos/{id}','ProductosController@listar');   
+Route::get('productos/{id}',[
+    'uses' => 'ProductosController@listar'
+]);  
+
+Route::get('post/{id}',[
+    'uses' => 'PostController@show'
+]);
 
 Route::get('post/create', 'PostController@create');
 

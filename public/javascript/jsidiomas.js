@@ -12,6 +12,11 @@ var dict = {
         eus: "Administrazioa",
         en: "Administration"
     },
+    "productos": {
+        es: "Productos",
+        eus: "Produktuak",
+        en: "Products"
+    },
     "titulo": {
         es: "Centro Comercial Ballonti",
         eus: "Ballonti Supermerkatua",

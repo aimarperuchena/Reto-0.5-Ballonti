@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="style/estilo.css">
-    <link rel="stylesheet" type="text/css" href="style/tienda.css">
-	<script src="javascript/jquery.min.js"></script>
-	<script src="javascript/jquery.translate.js"></script>
-	<script type="text/javascript" src="javascript/jsidiomas.js"></script>
-	<script src="javascript/js.js"></script>
+  
+    <link href="{{ asset('style/estilo.css') }}" rel='stylesheet' type='text/css' />
+	<script src="{{ asset('javascript/jquery.min.js') }}"></script>
+	<script src="{{ asset('javascript/jquery.translate.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('javascript/jsidiomas.js') }}"></script>
+	<script src="{{ asset('javascript/js.js') }}"></script>
 	<title>Localizacion</title>
 </head>
 <body>
 <div id="header">
 	<div id="banner">
-		<img src="imagenes/fotos_ballonti/ballonti5.jpg" id="ban">
+		<img src="{{ asset('imagenes/fotos_ballonti/ballonti5.jpg') }}" id="ban">
 	</div>
 	<div id="menu">
 		<div class="titulo_index">
-		<h1 class="trn" data-trn-key="localizacion">Localizacion</h1>
+		<h1 class="trn" data-trn-key="productos">Productos</h1>
 		</div>
 		<div id="idiomas">
 			<div class="div_idiomas_fotos">
-				<img src="imagenes/españa.png" class="idiomas_fotos" onclick="cambiarEspañol()">
+				<img src="{{ asset('imagenes/españa.png') }}" class="idiomas_fotos" onclick="cambiarEspañol()">
 			</div>
 			<div class="div_idiomas_fotos">
-				<img src="imagenes/ikurriña.png" class="idiomas_fotos" onclick="cambiarEuskera()">
+				<img src="{{ asset('imagenes/ikurriña.png') }}" class="idiomas_fotos" onclick="cambiarEuskera()">
 			</div>
 			<div class="div_idiomas_fotos">
-				<img src="imagenes/ingles.jpg" class="idiomas_fotos" onclick="cambiarIngles()">
+				<img src="{{ asset('imagenes/ingles.jpg') }}" class="idiomas_fotos" onclick="cambiarIngles()">
 			</div>
 		</div>
 		<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn"><img src="imagenes/menu.jpg" id="imgMenu"></button>
+  <button onclick="myFunction()" class="dropbtn"><img src="{{ asset('imagenes/menu.jpg') }}" id="imgMenu"></button>
   <div id="myDropdown" class="dropdown-content">
   <a href="inicio" class="trn" data-trn-key="inicio">Inicio</a>
     <a href="tiendas" class="trn" data-trn-key="tiendas">Tiendas</a>
@@ -46,13 +46,18 @@
 	
 <div id="div_general_productos">
             <div id="div_nombre_tienda">
-                <p id="nombre_tienda">Forum Spot</p>
+			@if(count($nombre_tienda)>0)
+			@foreach($nombre_tienda as $nombre)
+                <p id="nombre_tienda">{{$nombre->nombre}}</p>
+			@endforeach
+			@endif
             </div>
 
+			@if (count($productos)>0)
             @foreach($productos as $producto)
             <div id="div_producto">
                 <div id="div_imagen_producto">
-                    <img src="{{$producto->link_imagen}}" alt="">
+                    <img src={{ asset("$producto->link_imagen")}} alt="">
                 </div>
                 <div id="detalles_producto">
                     <p>Nombre: <span id="nombre_producto">{{$producto->nombre}}</span></p>
@@ -64,7 +69,9 @@
             </div>
 				
 			@endforeach
-            
+			@else
+			<h2>No hay productos</h2>
+            @endif
             
             
 

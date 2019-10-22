@@ -51,11 +51,11 @@
                 <p id="titulo_general_etiquetas_texto" class="trn" data-trn-key="tiendas">TIENDAS</p>
             </div>
 		<div id="cuadrados">
-			<div class="servicios"><a href="#"><img src="imagenes/forum/forumsport_logo.jpg" class="serImg"></a>
+			<div class="servicios"><a href="productos/1"><img src="imagenes/forum/forumsport_logo.jpg" class="serImg"></a>
 			<p id="etiqueta_nombre" >Forum Sport</p></div>
-			<div class="servicios"><a href="#"><img src="imagenes/game/game_logo.jpg" class="serImg"></a>
+			<div class="servicios"><a href="productos/2"><img src="imagenes/game/game_logo.jpg" class="serImg"></a>
 			<p id="etiqueta_nombre">Game</p></div>
-			<div class="servicios"><a href="#"><img src="imagenes/tgb/tgb_logo.jpg" class="serImg"></a>
+			<div class="servicios"><a href="productos/3"><img src="imagenes/tgb/tgb_logo.jpg" class="serImg"></a>
 			<p id="etiqueta_nombre" >The Good Burger</p></div>
 			</div>
         </div>
