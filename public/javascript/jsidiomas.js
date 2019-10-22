@@ -157,6 +157,31 @@ var dict = {
         eus: "Ballonti etorbidea, 1 48920 Portugalete (Bizkaia)",
         en: "Ballonti Avenue, 1 48920 Portugalete (Bizkaia)"
     },
+    "texto_cine": {
+        es: "Si buscas una tarde de cine, aquí podrás encontrar la cartelera de ésta semana.",
+        eus: "Arratsaldean pelikularen bila bazabiltza, hemen aste honetan karteldegia aurki dezakezu.",
+        en: "If you are looking for a movie afternoon, here you can find the billboard this week."
+    },
+    "texto_bolera": {
+        es: "En Ozone Ballonti puedes encontrar 18 pistas de bowling homologadas por la ACB, máquinas de redemption, deportivas, simuladores, video-juegos y 400 metros cuadrados de trampoline park. Además, podrás disfrutar de un estupendo servicio de bar-cafetería.",
+        eus: "Ozone Ballonti-n ACB-k onartutako 18 bolatoki aurkitu ahal izango dituzu, erredentzio makinak, kirolak, simuladoreak, bideojokoak eta 400 metro karratuko trampolina parkea. Gainera, taberna-kafetegi zerbitzu bikainaz gozatu ahal izango duzu.",
+        en: "In Ozone Ballonti you can find 18 bowling lanes approved by the ACB, redemption machines, sports, simulators, video games and 400 square meters of trampoline park. In addition, you can enjoy a great bar-cafeteria service."
+    },
+    "texto_gym": {
+        es: "En World Fitness Center serás asesorado por un staff de profesionales altamente capacitados y experimentados, que te llevaran a conseguir tus objetivos. Te ofreceremos soluciones a TU medida.",
+        eus: "World Fitness Center-en, prestakuntza handiko eta eskarmentu handiko profesionaletako langile batek aholkatuko zaituzte, zure helburuak lortzeko. Neurrira egokitutako soluzioak eskainiko dizkizugu.",
+        en: "In World Fitness Center you will be advised by a staff of highly trained and experienced professionals, who will take you to achieve your goals. We will offer you tailored solutions."
+    },
+    "cines_titulo": {
+        es: "DOCK CINES",
+        eus: "DOCK ZINEAK",
+        en: "DOCK MOVIE THEATER"
+    },
+    "gym_titulo": {
+        es: "GIMNASIO WORLD FITNESS",
+        eus: "WORLD FITNESS GIMNASIOA",
+        en: "WORLD FITNESS GYM"
+    },
 
 }
 

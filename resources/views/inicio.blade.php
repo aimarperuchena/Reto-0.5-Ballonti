@@ -31,7 +31,7 @@
                </div>
             </div>
             <div id="inf">
-               <a href="informacion.html"><img src="imagenes/inf.jpg" id="infb"></a>
+               <a href="informacion"><img src="imagenes/inf.jpg" id="infb"></a>
             </div>
          </div>
       </div>
