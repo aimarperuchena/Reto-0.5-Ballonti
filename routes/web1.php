@@ -39,12 +39,12 @@ Route::get('administracion','TiendasController@verTiendas');
     
 
 
-Route::get('productos', function () {
-    return view('productos');
-});
+
 
 Route::get('productos/{id}','ProductosController@listarProductos');
     
 
+Route::get('post/create', 'PostController@create');
 
-Route::get('listartiendas', 'TiendasController@verTiendas');
+Route::post('post', 'PostController@store');
+    
