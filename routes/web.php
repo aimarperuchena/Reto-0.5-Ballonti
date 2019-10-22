@@ -45,8 +45,8 @@ Route::get('administracion','TiendasController@verTiendas');
 
 
 
-Route::get('productos/{id}','ProductosController@listarProductos');
-    
+Route::get('productos','ProductosController@index');
+Route::get('productos/{id}','ProductosController@listar');   
 
 Route::get('post/create', 'PostController@create');
 

@@ -62,32 +62,10 @@
                     <p>Link: <a href="google.com">{{$producto->link}}</a></p>
                 </div>
             </div>
-				<option value="{{$tienda->id}}">{{$tienda->nombre}}</option>
+				
 			@endforeach
             
-            <div id="div_producto">
-                <div id="div_imagen_producto">
-                </div>
-                <div id="detalles_producto">
-                    <p>Nombre: <span id="nombre_producto">Bicicleta de montaña</span></p>
-                    <p>Precio: <span id="precio_producto">4000 €</span></p>
-                    <p>Descripción: <span id="descipcion_producto">Bicicleta de montaña de alta gama con cuadro de carbono</span></p>
-                    <p>Stock: <span id="stock_producto">10</span></p>
-                    <p>Link: <a href="google.com">Enlace</a></p>
-                </div>
-            </div>
-
-            <div id="div_producto">
-                <div id="div_imagen_producto">
-                </div>
-                <div id="detalles_producto">
-                    <p>Nombre: <span id="nombre_producto">Bicicleta de montaña</span></p>
-                    <p>Precio: <span id="precio_producto">4000 €</span></p>
-                    <p>Descripción: <span id="descipcion_producto">Bicicleta de montaña de alta gama con cuadro de carbono</span></p>
-                    <p>Stock: <span id="stock_producto">10</span></p>
-                    <p>Link: <a href="google.com">Enlace</a></p>
-                </div>
-            </div>
+            
             
 
         </div>

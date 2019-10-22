@@ -5,13 +5,21 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\ProductosModel;
 use Validator;
+
+use DB;
 class ProductosController extends Controller
 {
-    public function listarProductos($id){
-        $productos = ProductosModel::table('productos')->where('id_tienda', $id);
+    public function index(){
+        $productos = ProductosModel::all();
         return view('productos',compact('productos'));
     }
 
+    public function listar($id){
+        $productos= ProductosModel::table('productos')
+                ->where('id_tienda',$id);
+
+                return view('productos',compact('productos'));
+    }
 
     public function store(Request $request)
     {
