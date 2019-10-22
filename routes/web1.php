@@ -32,6 +32,10 @@ Route::get('localizacion',function(){
     return view('localizacion');
 });
 
+Route::get('ocio',function(){
+    return view('ocio');
+});
+
 Route::get('informacion', function () {
     return view('informacion');
 });
