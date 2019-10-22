@@ -69,7 +69,7 @@
 						- <label class="trn" data-trn-key="horario6">Viernes, Sábados y Vísperas de Festivos hasta las 03h.</label>
 				</ul>
 			</div>
-			<div class="servicios"><a href="#"><img src="imagenes/maps.png" class="serImg"></a></div>
+			<div class="servicios info_map"><a href="localizacion"><img src="imagenes/maps.png" class="serImg"></a></div>
 			</div>
 		</div>
 	

@@ -8,7 +8,7 @@ use Validator;
 class ProductosController extends Controller
 {
     public function listarProductos($id){
-        $productos = ProductosController::table('productos')->where('id_tienda', $id);
+        $productos = ProductosModel::table('productos')->where('id_tienda', $id);
         return view('productos',compact('productos'));
     }
 
