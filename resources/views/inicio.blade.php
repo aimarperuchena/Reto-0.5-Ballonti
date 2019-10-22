@@ -50,7 +50,7 @@
                   <p id="etiqueta_nombre" class="trn" data-trn-key="tiendas">Tiendas</p>
                </div>
                <div class="servicios">
-                  <a href="#"><img src="imagenes/ocio.jpg" class="serImg"></a>
+                  <a href="ocio"><img src="imagenes/ocio.jpg" class="serImg"></a>
                   <p id="etiqueta_nombre" class="trn" data-trn-key="ocio">Ocio</p>
                </div>
                <div class="servicios">
