@@ -61,27 +61,22 @@
 
 /*DROP DOWN MENU*/
 
-<<<<<<< HEAD
-=======
-.dropdown {
+<<<<<<< HEAD=======.dropdown {
     flex: 0 0 20%;
     justify-content: center;
 }
 
->>>>>>> 0e1194594682f5475215368bdab6812ac63d8076
-.dropbtn {
+>>>>>>>0e1194594682f5475215368bdab6812ac63d8076 .dropbtn {
     background-color: white;
     font-size: 16px;
     border: none;
     cursor: pointer;
-<<<<<<< HEAD
-    height: 100%;
+    <<<<<<< HEAD height: 100%;
 }
 
 #imgMenu {
     height: 80%;
-=======
-    height: 40px;
+    =======height: 40px;
     margin-left: 5%;
 }
 
@@ -114,7 +109,7 @@
 
 .show {
     display: block;
->>>>>>> 0e1194594682f5475215368bdab6812ac63d8076
+    >>>>>>>0e1194594682f5475215368bdab6812ac63d8076
 }
 
 .dropdown {
@@ -165,7 +160,7 @@
 
 .servicios {
     height: 80%;
-    width: 20%;
+    width: 25%;
     border: solid;
     margin: auto;
     border-radius: 2em;
@@ -411,11 +406,12 @@ ul {
 }
 
 #horario {
-    height: 100%;
+    height: 70%;
     width: 30%;
     border: solid;
     margin: auto;
     padding: 2%;
+    font-size: 12px;
 }
 
 .info_map {
