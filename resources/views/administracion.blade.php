@@ -43,69 +43,39 @@
 </div>
 
 <div id="contenedor">
-	<div id="elegir_tienda">
-		<select>
-			@foreach($tiendas as $tienda)
-				<option value="{{$tienda->id}}">{{$tienda->nombre}}</option>
-			@endforeach
-			
-		</select>
-	</div>
-	<div id="insertar_producto">
+<div id="insertar_producto">
 		<div id="insertar_producto_titulo">
 			<h2 class="trn" data-trn-key="form1">INSERTAR PRODUCTO</h2>
 		</div>
 		<div id="formulario_añadir">
+		<form action="{{route('insertar')}}" method="post">
+			<label>Tienda: </label>
+			<input type="text" name="tienda" id=""><br>
 			<label class="trn" data-trn-key="form2">Nombre del Producto:</label>
-			<div id="nombre_form">
-			<input type="text" name="nombre">
-			</div>
+			
+			<input type="text" name="nombre"><br>
+			
 			<label class="trn" data-trn-key="form3">Precio:</label>
-			<div id="precio_form">
-			<input type="text" name="precio">
-			</div>
+			
+			<input type="text" name="precio"><br>
+			
 			<label class="trn" data-trn-key="form4">Descripcion:</label>
-			<div id="textarea">
-			<textarea></textarea>
+			
+			<textarea name="descripcion"></textarea><br>
+			
+			<label>Stock: </label><input type="text" name="stock" id=""><br>
+			<label>Imagen</label>
+			<input type="file" name="imagen" id=""><br>
+			<label>Enlace</label>
+			<input type="text" name="link" id=""><br>
+				
+				<input type="submit" name="enviar" value="Enviar">
 			</div>
-			<div id="botonAgregar">
-				<input type="button" name="boton" value="Insertar">
-			</div>
+			</form>
 		</div>
+		
 	</div>
-	<div id="modificar_stock">
-		<div id="modificar_titulo">
-			<h2 class="trn" data-trn-key="form5">MODIFICAR STOCK</h2>
-		</div>
-		<div id="formulario_modificar">
-			<div>
-				 <select>
-					  <option value="Producto1">Producto1</option>
-					  <option value="Producto2">Producto1</option>
-					</select>
-			</div>
-			<label class="trn" data-trn-key="form6">Numero de Stock:</label>
-			<div>
-				<input type="number" name="stock">
-			</div>
-		</div>
-	</div>
-	<div id="eliminar_producto">
-		<div id="eliminar_titulo">
-			<h2 class="trn" data-trn-key="form7">ELIMINAR PRODUCTO</h2>
-		</div>
-		<div id="formulario_eliminar">
-			<div>
-				<select>
-					  <option value="Producto1">Producto1</option>
-					  <option value="Producto2">Producto1</option>
-				</select>
-			</div>
-			<div id="boton_eliminar">
-				<input type="button" name="eliminar" value="Eliminar">
-			</div>
-		</div>
-	</div>
+	
 
 <div id="footer">
 <div><img src="imagenes/fotos_ballonti/logo.gif"></div>

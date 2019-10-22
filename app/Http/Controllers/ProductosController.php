@@ -26,22 +26,6 @@ class ProductosController extends Controller
 
     public function store(Request $request)
     {
-        $validator = Validator::make($request->all(), [
-			
-            'nombre' => 'required|unique:posts|max:255|min:1',
-            'descripcion' => 'required|max:255|min:1',
-            'precio' => 'required|numeric',
-            'imagen' => 'file',
-            'link' => 'max:255'
-        ]);
-
-        if ($validator->fails()) {
-			return redirect('ProductosModel/create')
-				->withErrors($validator)
-				->withInput();
-		}
-		// Store post
-		$post = Post::create($request->except('csrf'));
-		return redirect(url('/'));
+        return view('administracion');
     }
 }
