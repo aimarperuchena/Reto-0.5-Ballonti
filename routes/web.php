@@ -39,8 +39,12 @@ Route::get('ocio',function(){
 Route::get('informacion', function () {
     return view('informacion');
 });
-Route::get('administracion','TiendasController@verTiendas');
-    
+Route::get('administracion', function(){
+    return view('administracion');
+});
+
+
+Route::post("administracion","ProductosController@store")->name("insertar");
 
 
 
@@ -50,9 +54,7 @@ Route::get('productos/{id}',[
     'uses' => 'ProductosController@listar'
 ]);  
 
-Route::get('post/{id}',[
-    'uses' => 'PostController@show'
-]);
+
 
 Route::get('post/create', 'PostController@create');
 
