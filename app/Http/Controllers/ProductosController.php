@@ -17,15 +17,25 @@ class ProductosController extends Controller
     }
 
     public function listar($id){
-        $productos = ProductosModel::where('id_tienda', $id)
-               ->get();
+        $productos = ProductosModel::where('id_tienda', $id)->get();
         $nombre_tienda= TiendasModel::where('id', $id)->get();
-
-                return view('productos',compact('productos'), compact('nombre_tienda'));
+        return view('productos',compact('productos'), compact('nombre_tienda'));
     }
 
     public function store(Request $request)
     {
-        return view('administracion');
+        
+        $producto = new ProductosModel();
+ 
+        $producto->nombre = request('nombre');
+        $producto->descripcion = request('descripcion');
+        $producto->id_tienda= request("id_tienda");
+        $producto->precio=request("precio");
+        $producto->stock=request("stock");
+
+        
+        $producto->link=request("link");
+        $producto->save();
+        return('administracion');
     }
 }

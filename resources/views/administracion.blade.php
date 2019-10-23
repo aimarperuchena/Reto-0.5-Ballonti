@@ -48,34 +48,33 @@
 			<h2 class="trn" data-trn-key="form1">INSERTAR PRODUCTO</h2>
 		</div>
 		<div id="formulario_añadir">
-		<form action="{{route('insertar')}}" method="post">
+		<form action="insert" method="post">
+		@csrf
 			<label>Tienda: </label>
-			<input type="text" name="tienda" id=""><br>
-			<label class="trn" data-trn-key="form2">Nombre del Producto:</label>
-			
-			<input type="text" name="nombre"><br>
-			
-			<label class="trn" data-trn-key="form3">Precio:</label>
-			
-			<input type="text" name="precio"><br>
-			
-			<label class="trn" data-trn-key="form4">Descripcion:</label>
-			
-			<textarea name="descripcion"></textarea><br>
-			
-			<label>Stock: </label><input type="text" name="stock" id=""><br>
-			<label>Imagen</label>
-			<input type="file" name="imagen" id=""><br>
-			<label>Enlace</label>
-			<input type="text" name="link" id=""><br>
-				
-				<input type="submit" name="enviar" value="Enviar">
+			<select name="id_tienda">
+			@foreach($tiendas as $tienda)
+				<option value="{{$tienda->id}}">{{$tienda->nombre}}</option>
+			@endforeach
+			</select>
+			<br>
+			<label class="trn" data-trn-key="nombre_producto">Nombre del Producto:</label><input type="text" name="nombre"><br>
+			<label class="trn" data-trn-key="precio">Precio:</label><input type="text" name="precio"><br>
+			<label class="trn" data-trn-key="form4">Descripcion:</label><textarea name="descripcion"></textarea><br>
+			<label class="trn" data-trn-key>Stock: </label><input type="text" name="stock" id=""><br>
+			<label>Imagen</label><input type="file" name="imagen" id=""><br>
+			<label>Enlace</label><input type="text" name="link" id=""><br>
+			<input type="submit" name="enviar" value="Enviar">
 			</div>
 			</form>
 		</div>
 		
 	</div>
 	
+
+
+<div id="modificar_stock">
+
+</div>
 
 <div id="footer">
 <div><img src="imagenes/fotos_ballonti/logo.gif"></div>

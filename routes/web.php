@@ -45,11 +45,12 @@ Route::get('administracion', function(){
 
 
 Route::post("administracion","ProductosController@store")->name("insertar");
+Route::get("administracion","TiendasController@verTiendas");
+Route::post('insert','ProductosController@store');
 
 
 
 
-Route::get('productos','ProductosController@index');
 Route::get('productos/{id}',[
     'uses' => 'ProductosController@listar'
 ]);  

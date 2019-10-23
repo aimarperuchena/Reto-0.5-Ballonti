@@ -17,7 +17,7 @@ class ProductosTableSeeder extends Seeder
             'descripcion'=> 'Bicicleta de alto rendimiento con frenos de carbono',
             'precio'=>'4000',
             'stock'=>'10',
-            'link_imagen'=>'imagenes/forum/orbea_sport_bici.jpg',
+            'link_imagen'=>'orbea_sport_bici.jpg',
             'link'=>'https://www.google.com'
         ]);
     }
