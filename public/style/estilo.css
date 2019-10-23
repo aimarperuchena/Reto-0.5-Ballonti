@@ -578,3 +578,18 @@ ul {
 #gymImg {
     width: 100%;
 }
+
+@media (max-width: 700px) {
+    #cuadrados {
+        flex-direction: column;
+        align-items: space-between;
+        height: 10em;
+        margin-bottom: 10em;
+    }
+    #paginas {
+        height: 30em;
+    }
+    #txt_mensaje2 {
+        width: 20em;
+    }
+}
