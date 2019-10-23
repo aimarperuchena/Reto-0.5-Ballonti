@@ -61,62 +61,26 @@
 
 /*DROP DOWN MENU*/
 
-<<<<<<< HEAD=======.dropdown {
-    flex: 0 0 20%;
-    justify-content: center;
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 3em;
+    width: 2em;
+    margin-left: 15%;
 }
 
->>>>>>>0e1194594682f5475215368bdab6812ac63d8076 .dropbtn {
+.dropbtn {
     background-color: white;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    <<<<<<< HEAD height: 100%;
+    height: 3em;
+    width: 2em;
 }
 
 #imgMenu {
-    height: 80%;
-    =======height: 40px;
-    margin-left: 5%;
-}
-
-#imgMenu {
-    height: 100%;
-    height: 40px;
-    width: 40px;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown a:hover {
-    background-color: #ddd;
-}
-
-.show {
-    display: block;
-    >>>>>>>0e1194594682f5475215368bdab6812ac63d8076
-}
-
-.dropdown {
-    flex: 0 0 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 50%;
+    width: 75%;
 }
 
 .dropdown-content {
@@ -613,4 +577,19 @@ ul {
 
 #gymImg {
     width: 100%;
+}
+
+@media (max-width: 700px) {
+    #cuadrados {
+        flex-direction: column;
+        align-items: space-between;
+        height: 10em;
+        margin-bottom: 10em;
+    }
+    #paginas {
+        height: 30em;
+    }
+    #txt_mensaje2 {
+        width: 20em;
+    }
 }

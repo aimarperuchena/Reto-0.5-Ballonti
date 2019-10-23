@@ -22,6 +22,7 @@ class CreateProductosTable extends Migration
             $table->bigInteger('stock');
             $table->string('link_imagen')->nullable();
             $table->string('link')->nullable();
+            $table->timestamps();
 
             $table->foreign('id_tienda')->references('id')->on('tiendas');
         });

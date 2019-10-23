@@ -16,7 +16,7 @@
 	<div id="menu">
 		<div class="titulo_index">
 		<h1 class="trn" data-trn-key="titulo_inf">Qué es C.C. Ballonti</h1>
-	</div>
+		</div>
 		<div id="idiomas">
 			<div class="div_idiomas_fotos">
 				<img src="imagenes/españa.png" class="idiomas_fotos" onclick="cambiarEspañol()">

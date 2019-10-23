@@ -57,14 +57,14 @@
             @foreach($productos as $producto)
             <div id="div_producto">
                 <div id="div_imagen_producto">
-                    <img src={{ asset("$producto->link_imagen")}} alt="">
+                    <img src="/imagenes/productos/{{$producto->id_tienda}}/{{ $producto->link_imagen}}" alt="">
                 </div>
                 <div id="detalles_producto">
                     <p>Nombre: <span id="nombre_producto">{{$producto->nombre}}</span></p>
                     <p>Precio: <span id="precio_producto">{{$producto->precio}}</span></p>
                     <p>Descripción: <span id="descipcion_producto">{{$producto->descripcion}}</span></p>
                     <p>Stock: <span id="stock_producto">{{$producto->stock}}</span></p>
-                    <p>Link: <a href="google.com">{{$producto->link}}</a></p>
+                    <p>Link: <a href="{{$producto->link}}">{{$producto->link}}</a></p>
                 </div>
             </div>
 				
