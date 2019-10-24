@@ -24,24 +24,39 @@ class ProductosController extends Controller
                 return view('productos',compact('productos'), compact('nombre_tienda'));
     }
 
+    public function verProductosMod(){
+        $productos = ProductosModel::all();
+        //eturn view('productos',compact('productos'));
+        return view('modificar')->with('productos',$productos);
+    }
+
     public function store(Request $request)
     {
-        $validator = Validator::make($request->all(), [
-			
-            'nombre' => 'required|unique:posts|max:255|min:1',
-            'descripcion' => 'required|max:255|min:1',
-            'precio' => 'required|numeric',
-            'imagen' => 'file',
-            'link' => 'max:255'
-        ]);
+        $producto = new ProductosModel();
+        $producto->nombre = request('nombre');
+        $producto->descripcion = request('descripcion');
+        $producto->id_tienda= request("id_tienda");
+        $producto->precio=request("precio");
+        $producto->stock=request("stock");
+        $producto->link=request("link");
+        //$producto->link_imagen=request('imagen')->getClientOriginalName();
+        
+        
+/*
+        if($request->hasFile('imagen'))
+        {
+            $file = $request->file('imagen');
+            $originalname = $file->getClientOriginalName();
+            $path = $file->storeAs('public/imagenes'.request("id_tienda"), $originalname);
+        }
+*/
+        $producto->save();
+        return('administracion');
+    }
 
-        if ($validator->fails()) {
-			return redirect('ProductosModel/create')
-				->withErrors($validator)
-				->withInput();
-		}
-		// Store post
-		$post = Post::create($request->except('csrf'));
-		return redirect(url('/'));
+    public function update(Request $request){
+        $producto=new ProductosModel();
+        $producto->id=request('id');
+        $stock->id=request('stock');
     }
 }

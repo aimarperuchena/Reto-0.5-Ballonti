@@ -39,10 +39,31 @@ Route::get('ocio',function(){
 Route::get('informacion', function () {
     return view('informacion');
 });
-Route::get('administracion','TiendasController@verTiendas');
-    
 
+Route::get('insertar', function() {
+    return view('insertar');
+});
 
+Route::get('modificar', function() {
+    return view('modificar');
+});
+
+Route::get('eliminar', function() {
+    return view('eliminar');
+});
+
+Route::get('administrador', function() {
+    return view('administrador');
+});
+Route::get('insertar','TiendasController@verTiendas');
+
+   
+Route::post("insertar","ProductosController@store")->name("insertar"); 
+
+Route::get('administrador', 'TiendasController@listarTiendas');
+Route::get('modificar', 'ProductosController@verProductosMod');
+
+Route::post("modificar", "ProductosCotroller@update")->name("update");
 
 
 Route::get('productos','ProductosController@index');

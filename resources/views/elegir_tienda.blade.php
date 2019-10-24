@@ -16,7 +16,7 @@
 	</div>
 	<div id="menu">
 		<div class="titulo_index">
-		<h1 class="trn" data-trn-key="productos">Productos</h1>
+		<h1 class="trn" data-trn-key="productos">Modificar Productos</h1>
 		</div>
 		<div id="idiomas">
 			<div class="div_idiomas_fotos">
@@ -43,35 +43,23 @@
 	</div>
 </div>
 <div id="contenedor">
-	
+
+		
+		
 <div id="div_general_productos">
             <div id="div_nombre_tienda">
-			@if(count($nombre_tienda)>0)
-			@foreach($nombre_tienda as $nombre)
-                <p id="nombre_tienda">{{$nombre->nombre}}</p>
-			@endforeach
-			@endif
+			<form action="{{route('elegir_tienda')}}" method="post">
+			<label>Tienda: </label>
+            <select name="id_tienda">
+            @foreach($tiendas as $tienda)
+                <option value="{{$tienda->id}}">{{$tienda->nombre}}</option>
+            @endforeach
+            </select>
+			<input type="submit" value="Elegir">
+			</form>
             </div>
 
-			@if (count($productos)>0)
-            @foreach($productos as $producto)
-            <div id="div_producto">
-                <div id="div_imagen_producto">
-				<img src="/imagenes/productos/{{$producto->id_tienda}}/{{ $producto->link_imagen}}" alt="">
-                </div>
-                <div id="detalles_producto">
-                    <p>Nombre: <span id="nombre_producto">{{$producto->nombre}}</span></p>
-                    <p>Precio: <span id="precio_producto">{{$producto->precio}}</span></p>
-                    <p>Descripción: <span id="descipcion_producto">{{$producto->descripcion}}</span></p>
-                    <p>Stock: <span id="stock_producto">{{$producto->stock}}</span></p>
-                    <p>Link: <a href="google.com">{{$producto->link}}</a></p>
-                </div>
-            </div>
-				
-			@endforeach
-			@else
-			<h2>No hay productos</h2>
-            @endif
+			
             
             
 

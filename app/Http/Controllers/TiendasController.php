@@ -9,13 +9,19 @@ class TiendasController extends Controller
     public function listarTiendas()
     {
        // Shops::select('id','name')->get();
-        $tiendas = TiendasModel::All();
-        return $tiendas->toJson();
+       $tiendas = TiendasModel::all();
+       return view('administrador',compact('tiendas'));
     }
 
     public function verTiendas(){
         
         $tiendas = TiendasModel::all();
-        return view('administracion',compact('tiendas'));
+        return view('insertar',compact('tiendas'));
+    }
+
+
+    public function verTiendasMod(){
+        $tiendas = TiendasModel::all();
+        return view('modificar',compact('tiendas'));
     }
 }

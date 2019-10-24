@@ -36,7 +36,7 @@
     <a href="tiendas" class="trn" data-trn-key="tiendas">Tiendas</a>
     <a href="ocio" class="trn" data-trn-key="ocio">Ocio</a>
     <a href="localizacion" class="trn" data-trn-key="localizacion">Localizacion</a>
-    <a href="administracion" class="trn" data-trn-key="administracion">Administracion</a>
+    <a href="administrador" class="trn" data-trn-key="administracion">Administracion</a>
   </div>
 </div>
 
