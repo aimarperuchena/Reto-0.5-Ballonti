@@ -54,11 +54,17 @@ class ProductosController extends Controller
         return('administracion');
     }
 
-    public function update(Request $request){
-        $producto=new ProductosModel();
-        $producto->id=request('id');
-        $stock->id=request('stock');
+    public function updateStore(Request $request){
+        
 
-        return('administracion');
+        
+
+        $producto = ProductosModel::where('id',$request('id_producto'));
+
+        $producto->stock = $request('stock_mod');
+
+        $producto->save();
+
+        return back();
     }
 }

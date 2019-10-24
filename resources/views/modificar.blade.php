@@ -64,7 +64,7 @@
                         <input type="text" name="stock_mod" id="">
                         <input type="submit" value="modificar">
                         <br>
-                        <input type="hidden" name="id_producto" value="{{$producto->id}}">
+                        <input type="hidden" name="id_producto" value={{$producto->id}}>
 
                     </form>
                 </div>
