@@ -14,7 +14,6 @@ class TiendasController extends Controller
     }
 
     public function verTiendas(){
-        
         $tiendas = TiendasModel::all();
         return view('insertar',compact('tiendas'));
     }
