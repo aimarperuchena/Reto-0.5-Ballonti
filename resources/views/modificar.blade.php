@@ -47,11 +47,10 @@
     <div id="contenedor">
 
         <div id="div_general_productos">
-		@if (count($productos)>0)
-            @foreach($productos as $producto)
+            @if (count($productos)>0) @foreach($productos as $producto)
             <div id="div_producto">
                 <div id="div_imagen_producto">
-				<img src="/imagenes/productos/{{$producto->id_tienda}}/{{ $producto->link_imagen}}" alt="">
+                    <img src="/imagenes/productos/{{$producto->id_tienda}}/{{ $producto->link_imagen}}" alt="">
                 </div>
                 <div id="detalles_producto">
                     <p>Nombre: <span id="nombre_producto">{{$producto->nombre}}</span></p>
@@ -59,19 +58,21 @@
                     <p>Descripción: <span id="descipcion_producto">{{$producto->descripcion}}</span></p>
                     <p>Stock: <span id="stock_producto">{{$producto->stock}}</span></p>
                     <p>Link: <a href="google.com">{{$producto->link}}</a></p>
-					<form action="{{route('update')}}" method="post">
-				<label>Modificar Stock</label><input type="text" name="stock_mod" id=""><input type="submit" value="modificar"><br>
-				<input type="hidden" name="id_producto" value="{{$producto->id}}">
-				
-				</form>
-				</div>
-				
+                    <form action="{{route('update')}}" method="post">
+					@csrf
+                        <label>Modificar Stock</label>
+                        <input type="text" name="stock_mod" id="">
+                        <input type="submit" value="modificar">
+                        <br>
+                        <input type="hidden" name="id_producto" value="{{$producto->id}}">
+
+                    </form>
+                </div>
+
             </div>
-				
-			@endforeach
-			@else
-			<h2>No hay productos</h2>
-            @endif
+
+            @endforeach @else
+            <h2>No hay productos</h2> @endif
         </div>
 
         <div id="footer">

@@ -58,5 +58,7 @@ class ProductosController extends Controller
         $producto=new ProductosModel();
         $producto->id=request('id');
         $stock->id=request('stock');
+
+        return('administracion');
     }
 }

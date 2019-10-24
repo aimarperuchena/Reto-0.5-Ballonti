@@ -63,7 +63,7 @@ Route::post("insertar","ProductosController@store")->name("insertar");
 Route::get('administrador', 'TiendasController@listarTiendas');
 Route::get('modificar', 'ProductosController@verProductosMod');
 
-Route::post("modificar", "ProductosCotroller@update")->name("update");
+Route::post("modificar", "ProductosController@update")->name("update");
 
 
 Route::get('productos','ProductosController@index');
