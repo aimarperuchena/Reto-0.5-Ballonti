@@ -42,26 +42,10 @@
     </div>
 </div>
 <div id="contenedor">
-    <div id="botones_administrador">
-        <div id="div_insertar">
-            <a href="insertar">
-            Insertar Producto
-            </a>
-        </div>
-        <div id="div_modificar">
-            <a href="modificar">
-            Modificar Producto
-            </a>
-        </div>
+    
 
-        <div id="div_eliminar">
-            <a href="eliminar_producto">
-                Eliminar Producto
-            </a>
-        </div>
-    </div>
-
-   <div>
+    <form action="{{route('elegir_tienda')}}" method="post">
+        @csrf
 			<label>Tienda: </label>
             <select name="id_tienda">
             @foreach($tiendas as $tienda)
@@ -69,7 +53,7 @@
             @endforeach
             </select>
 			<input type="submit" value="Elegir">
-			</div>
+        </form>	
     
 
 <div id="footer">

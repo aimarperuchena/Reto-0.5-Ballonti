@@ -51,15 +51,15 @@
 			<p class="trn" data-trn-key="texto_cine">Si buscas una tarde de cine, aquí podrás encontrar la cartelera de ésta semana.</p>
 		</div>
 		<div id="imagen_cine">
-			<img src="imagenes/cine/cine1.jpg" alt="">
+			<img src="imagenes/cine/cine1.jpg" alt="" id="cineImg">
 		</div>
 
 	</div>
 <br>
 
 	
-	<script src="javascript/js.js"></script>
-	</div>
+	
+	
 	<div id="ocio_bolera">
 		<h2>OZONE BOWLING</h2>
 		<div class="texto_ocio">

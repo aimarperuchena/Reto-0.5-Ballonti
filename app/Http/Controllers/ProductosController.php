@@ -68,7 +68,34 @@ class ProductosController extends Controller
         return back();
     }
 
+    public function listarProductosTienda(Request $request){
+        $idtienda=request("id_tienda");
+        $tienda= TiendasModel::find($idtienda);
+        $productos = ProductosModel::where('id_tienda', $idtienda)
+               ->get();
+        return view('listar_productos_tienda')->with('productos',$productos)->with('tienda',$tienda);
+    }
+
     public function destroy($id){
-        
+        $article = ProductosModel::findOrFail($id);
+        $article->delete();
+        return view('administracion');
+    }
+
+    public function modificar($id){
+        $productos = ProductosModel::findOrFail($id);
+               
+               return view('modificar')->with('productos',$productos);
+
+    }
+
+    public function update(Request $request){
+        $id_producto=request('id_producto');
+        $stock=request('stock_mod');
+
+        ProductosModel::where('id', $id_producto)
+          ->update(['stock' => $stock]);
+        return view('inicio');
+          
     }
 }

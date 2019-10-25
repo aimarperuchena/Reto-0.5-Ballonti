@@ -23,4 +23,6 @@ class TiendasController extends Controller
         $tiendas = TiendasModel::all();
         return view('modificar',compact('tiendas'));
     }
+
+    
 }
