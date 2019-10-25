@@ -99,12 +99,11 @@
     }
     
     .dropdown {
-        flex: 0 0 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        position: relative;
+        display: inline-block;
         height: 3em;
         width: 2em;
+        margin-left: 15%;
     }
     
     #imgMenu {
