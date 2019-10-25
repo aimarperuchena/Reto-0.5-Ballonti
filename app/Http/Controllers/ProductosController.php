@@ -47,11 +47,12 @@ class ProductosController extends Controller
         {
             $file = $request->file('imagen');
             $originalname = $file->getClientOriginalName();
-            $path = $file->storeAs('public/imagenes'.request("id_tienda"), $originalname);
+            $path = $file->storeAs('public', $originalname);
         }
-*/
+
         $producto->save();
         return('administracion');
+        */
     }
 
     public function updateStore(Request $request){
