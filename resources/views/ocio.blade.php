@@ -50,35 +50,9 @@
 		<div id="texto_cine">
 			<p class="trn" data-trn-key="texto_cine">Si buscas una tarde de cine, aquí podrás encontrar la cartelera de ésta semana.</p>
 		</div>
-		<div class="slideshow-container_cine">
-
-			<div class="mySlides fade">
-			  <div class="numbertext">1 / 5</div>
-			  <img src="imagenes/cine/cine1.jpg" style="width:100%" class="carrImg_cine">
-			  
-			</div>
-
-			<div class="mySlides fade">
-			  <div class="numbertext">2 / 5</div>
-			  <img src="imagenes/cine/cine2.jpg" style="width:100%" class="carrImg_cine">
-			  
-			</div>
-
-			<div class="mySlides fade">
-			  <div class="numbertext">3 / 5</div>
-			  <img src="imagenes/cine/cine3.jpg" style="width:100%" class="carrImg_cine">
-			  
-			</div>
-			<div class="mySlides fade">
-			  <div class="numbertext">4 / 5</div>
-			  <img src="imagenes/cine/cine4.jpg" style="width:100%" class="carrImg_cine">
-			  
-			</div>
-			<div class="mySlides fade">
-			  <div class="numbertext">5 / 5</div>
-			  <img src="imagenes/cine/cine5.jpg" style="width:100%" class="carrImg_cine">
-			  
-			</div>
+		<div id="imagen_cine">
+			<img src="imagenes/cine/cine1.jpg" alt="">
+		</div>
 
 	</div>
 <br>
