@@ -67,4 +67,8 @@ class ProductosController extends Controller
 
         return back();
     }
+
+    public function destroy($id){
+        
+    }
 }
