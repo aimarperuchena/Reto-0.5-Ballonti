@@ -85,7 +85,7 @@
 	</div>
 
 <div id="footer">
-		<div><img src="imagenes/logo.gif"></div>
+		<div><img src="{{ asset('imagenes/fotos_ballonti/logo.gif') }}"></div>
 		<div id="mini" class="trn" data-trn-key="footer">A sólo 10 minutos de Bilbao, C.C. Ballonti es mucho más que un espacio para realizar tus compras, es un lugar donde el tiempo de ocio se llena de emoción para toda la familia...</div>
 		<div>Tlf: (+34) 944 915 246<br>Fax:    (+34) 944 926 822<br> mail:   spain.ballonti@cbre.com</div>
 	</div>

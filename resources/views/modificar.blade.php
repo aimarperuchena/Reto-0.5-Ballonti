@@ -65,9 +65,6 @@
                    </form>
                </div>
            </div>
-                
-            
-            <h2>No hay productos</h2>
        </div>
     
     <div id="footer">
