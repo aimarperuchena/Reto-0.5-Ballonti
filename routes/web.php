@@ -15,7 +15,7 @@
 
 Route::get('/', function () {
     return view('inicio');
-});
+})->name('inicio');
 
 Route::get("inicio", function(){
     return view('inicio');
@@ -46,11 +46,12 @@ Route::get('insertar', function() {
 
 
 
+
 Route::get('eliminar', function() {
     return view('eliminar');
 });
 
-Route::get('administrador', 'TiendasController@listarTiendas');
+Route::get('administrador', 'TiendasController@listarTiendas')->name('administrador');
     
 Route::get('modificar/{id}', 'ProductosController@modificar');
 Route::post('update', 'ProductosController@update')->name('update');

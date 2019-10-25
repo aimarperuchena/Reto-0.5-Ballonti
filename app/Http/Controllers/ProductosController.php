@@ -49,10 +49,10 @@ class ProductosController extends Controller
             $originalname = $file->getClientOriginalName();
             $path = $file->storeAs('public', $originalname);
         }
-
+*/
         $producto->save();
-        return('administracion');
-        */
+        return redirect()->route('administrador');
+        
     }
 
     public function updateStore(Request $request){
@@ -66,7 +66,7 @@ class ProductosController extends Controller
 
         $producto->save();
 
-        return back();
+        return redirect()->route('administrador');
     }
 
     public function listarProductosTienda(Request $request){
@@ -80,7 +80,7 @@ class ProductosController extends Controller
     public function destroy($id){
         $article = ProductosModel::findOrFail($id);
         $article->delete();
-        return view('inicio');
+        return redirect()->route('administrador');
     }
 
     public function modificar($id){
@@ -96,7 +96,7 @@ class ProductosController extends Controller
 
         ProductosModel::where('id', $id_producto)
           ->update(['stock' => $stock]);
-        return view('inicio');
+          return redirect()->route('administrador');
           
     }
 }
