@@ -79,7 +79,7 @@ class ProductosController extends Controller
     public function destroy($id){
         $article = ProductosModel::findOrFail($id);
         $article->delete();
-        return view('administracion');
+        return view('inicio');
     }
 
     public function modificar($id){
