@@ -593,6 +593,30 @@
         width: 100%;
     }
     
+    .botones_productos {
+        border: 1px black solid;
+        width: 15%;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .botones_productos:hover {
+        background-color: gray;
+    }
+    
+    .botones_productos_mod {
+        border: 1px black solid;
+        width: 25%;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .botones_productos_mod:hover {
+        background-color: gray;
+    }
+    
     @media (max-width: 700px) {
         #cuadrados {
             flex-direction: column;

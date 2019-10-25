@@ -7,7 +7,7 @@
 	<script src="{{ asset('javascript/jquery.translate.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('javascript/jsidiomas.js') }}"></script>
 	<script src="{{ asset('javascript/js.js') }}"></script>
-	<title>Localizacion</title>
+	<title>Lista de productos</title>
 </head>
 <body>
 <div id="header">
@@ -45,14 +45,16 @@
 <div id="contenedor">
 	
 <div id="div_general_productos">
-	<a href="insertar">Insertar</a>
+	
             <div id="div_nombre_tienda">
 			
 			
                 <p id="nombre_tienda">{{$tienda->nombre}}</p>
 			
 			
-            </div>
+			</div>
+			
+			<a href="insertar" class=botones_productos>Insertar</a>
 
 			@if (count($productos)>0)
             @foreach($productos as $producto)
@@ -68,8 +70,8 @@
                     <p>Descripción: <span id="descipcion_producto">{{$producto->descripcion}}</span></p>
                     <p>Stock: <span id="stock_producto">{{$producto->stock}}</span></p>
 					<p>Link: <a href="{{$producto->link}}">{{$producto->link}}</a></p>
-					<a href="modificar/{{$producto->id}}">Modificar Stock</a>
-					<a href="eliminar/{{$producto->id}}">Eliminar </a>
+					<a href="modificar/{{$producto->id}}" class=botones_productos_mod>Modificar Stock</a>
+					<a href="eliminar/{{$producto->id}}" class=botones_productos>Eliminar </a>
 				</div>
             </div>
 				
