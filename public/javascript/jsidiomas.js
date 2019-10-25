@@ -62,6 +62,16 @@ var dict = {
         eus: "Zer da Ballonit",
         en: "What is Ballonti"
     },
+    "imagen": {
+        es: "Imagen",
+        eus: "Argazkia",
+        en: "Image"
+    },
+    "enlace": {
+        es: "Enlace",
+        eus: "Linka",
+        en: "Link"
+    },
     "parrafo1_inf": {
         es: "En sus más de 50.000 metros cuadrados hallarás tiendas exclusivas y primeras marcas de moda y complementos,como Primark, H&M, New Yorker, Jack & Jones, Springfield, Springfield, Bershka, Pull & Bear, Stradivarius, Lefties, Women' Secret, Deichmann, Intimissimi, Paco Martínez...",
         eus: "Bere 50.000 metro karratu baino gehiagotan denda esklusiboak eta moda marka eta osagarrien puntakoak aurkituko dituzu, hala nola Primark, H&M, New Yorker, Jack & Jones, Springfield, Springfield, Bershka, Pull & Bear, Stradivarius, Lefties, Women 'Secret, Deichmann, Intimissimi, Paco Martínez ...",
@@ -136,6 +146,11 @@ var dict = {
         es: "Descripcion:",
         eus: "Deskribapen:",
         en: "Description:"
+    },
+    "stock": {
+        es: "Stock",
+        eus: "Stoka",
+        en: "Stocka"
     },
     "form5": {
         es: "MODIFICAR STOCK",

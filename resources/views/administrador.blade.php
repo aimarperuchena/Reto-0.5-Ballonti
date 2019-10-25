@@ -46,7 +46,7 @@
 
     <form action="{{route('elegir_tienda')}}" method="post">
         @csrf
-			<label>Tienda: </label>
+			<label class="trn" data-trn-key="tiendas">Tienda: </label>
             <select name="id_tienda">
             @foreach($tiendas as $tienda)
                 <option value="{{$tienda->id}}">{{$tienda->nombre}}</option>

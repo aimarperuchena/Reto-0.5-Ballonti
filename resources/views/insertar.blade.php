@@ -59,9 +59,9 @@
             <label class="trn" data-trn-key="nombre_producto">Nombre del Producto:</label><input type="text" name="nombre"><br>
             <label class="trn" data-trn-key="precio">Precio:</label><input type="text" name="precio"><br>
             <label class="trn" data-trn-key="form4">Descripcion:</label><textarea name="descripcion"></textarea><br>
-            <label class="trn" data-trn-key>Stock: </label><input type="text" name="stock" id=""><br>
-            <label>Imagen</label><input type="file" name="imagen" id=""><br>
-            <label>Enlace</label><input type="text" name="link" id=""><br>
+            <label class="trn" data-trn-key="stock">Stock: </label><input type="text" name="stock" id=""><br>
+            <label class="trn" data-trn-key="imagen">Imagen</label><input type="file" name="imagen" id=""><br>
+            <label class="trn" data-trn-key="enlace">Enlace</label><input type="text" name="link" id=""><br>
             <input type="submit" name="enviar" value="Enviar">
             </div>
             </form>
