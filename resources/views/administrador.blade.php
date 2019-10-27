@@ -44,7 +44,7 @@
 <div id="contenedor">
     
 
-    <form action="{{route('elegir_tienda')}}" method="post">
+    <form action="{{route('elegir_tienda')}}" method="post" id="formulario_elegir_tienda">
         @csrf
 			<label class="trn" data-trn-key="tiendas">Tienda: </label>
             <select name="id_tienda">

@@ -65,11 +65,11 @@
 
                 </div>
                 <div id="detalles_producto">
-                    <p>Nombre: <span id="nombre_producto">{{$producto->nombre}}</span></p>
-                    <p>Precio: <span id="precio_producto">{{$producto->precio}}</span></p>
-                    <p>Descripción: <span id="descipcion_producto">{{$producto->descripcion}}</span></p>
-                    <p>Stock: <span id="stock_producto">{{$producto->stock}}</span></p>
-					<p>Link: <a href="{{$producto->link}}">{{$producto->link}}</a></p>
+				<label class="trn" data-trn-key="form2" style="font-size:1.5em; font-weight:bold;">Nombre:</label> <label id="nombre_producto">{{$producto->nombre}}</label>					
+                    <label class="trn" data-trn-key="form3" style="font-size:1.5em;  font-weight:bold;" >Precio: </label> <label id="precio_producto">{{$producto->precio}}</label>
+                    <label class="trn" data-trn-key="form4" style="font-size:1.5em;  font-weight:bold;">Descripción:</label> <label id="descipcion_producto">{{$producto->descripcion}}</label>
+                    <label class="trn" data-trn-key="stock" style="font-size:1.5em;  font-weight:bold;">Stock:</label> <label id="stock_producto">{{$producto->stock}}</label>
+                     <a class="trn" data-trn-key="enlace" href="{{$producto->link}}">Enlace</a>
 					<a href="modificar/{{$producto->id}}" class=botones_productos_mod>Modificar Stock</a>
 					<a href="eliminar/{{$producto->id}}" class=botones_productos>Eliminar </a>
 				</div>

@@ -32,6 +32,7 @@ class ProductosController extends Controller
 
     public function store(Request $request)
     {
+        
         $producto = new ProductosModel();
         $producto->nombre = request('nombre');
         $producto->descripcion = request('descripcion');
@@ -39,18 +40,20 @@ class ProductosController extends Controller
         $producto->precio=request("precio");
         $producto->stock=request("stock");
         $producto->link=request("link");
-        //$producto->link_imagen=request('imagen')->getClientOriginalName();
-        
-        
-/*
-        if($request->hasFile('imagen'))
-        {
-            $file = $request->file('imagen');
-            $originalname = $file->getClientOriginalName();
-            $path = $file->storeAs('public', $originalname);
-        }
-*/
+       
+       
         $producto->save();
+        
+
+
+
+
+
+
+
+
+
+
         return redirect()->route('administrador');
         
     }

@@ -46,27 +46,27 @@
             
            <div id="div_producto">
                <div id="div_imagen_producto">
-                   <p> <?php var_export($productos->id_tienda,true); ?></p>
+                   
                 <img src="/imagenes/productos/{{$productos->id_tienda}}/{{ $productos->link_imagen}}" alt="">
                </div>
                <div id="detalles_producto">
-                   <p>Nombre: <span id="nombre_producto">{{$productos->nombre}}</span></p>
-                   <p>Precio: <span id="precio_producto">{{$productos->precio}}</span></p>
-                   <p>Descripción: <span id="descipcion_producto">{{$productos->descripcion}}</span></p>
-                   <p>Stock: <span id="stock_producto">{{$productos->stock}}</span></p>
-                   <p>Link: <a href="{{$productos->link}}">{{$productos->link}}</a></p>
+               <label class="trn" data-trn-key="form2" style="font-size:1.5em; font-weight:bold;">Nombre:</label> <label id="nombre_producto">{{$productos->nombre}}</label>					
+                    <label class="trn" data-trn-key="form3" style="font-size:1.5em;  font-weight:bold;" >Precio: </label> <label id="precio_producto">{{$productos->precio}}</label>
+                    <label class="trn" data-trn-key="form4" style="font-size:1.5em;  font-weight:bold;">Descripción:</label> <label id="descipcion_producto">{{$productos->descripcion}}</label>
+                    <label class="trn" data-trn-key="stock" style="font-size:1.5em;  font-weight:bold;">Stock:</label> <label id="stock_producto">{{$productos->stock}}</label>
+                     <a class="trn" data-trn-key="enlace" href="{{$productos->link}}">Enlace</a>
                    <form action="{{route('update')}}" method="post">
                    @csrf
                    <input type="hidden" name="id_producto" value="{{$productos->id}}">
                        <label>Modificar Stock</label>
-                       <input type="text" name="stock_mod">
-                       <input type="submit" value="modificar">
+                       <input type="number" name="stock_mod" id="stock_mod">
+                       <input type="submit" value="modificar" id="btn_modificar">
                        <br>
                    </form>
                </div>
            </div>
        </div>
-    
+    <script src="/javascript/validacion_modificar.js"></script>
     <div id="footer">
    <div><img src="{{ asset('imagenes/fotos_ballonti/logo.gif') }}"></div>
 <div id="mini" class="trn" data-trn-key="footer">A sólo 10 minutos de Bilbao, C.C. Ballonti es mucho más que un espacio para realizar tus compras, es un lugar donde el tiempo de ocio se llena de emoción para toda la familia...</div>

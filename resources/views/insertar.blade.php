@@ -47,7 +47,7 @@
             <h2 class="trn" data-trn-key="form1">INSERTAR PRODUCTO</h2>
         </div>
         <div id="formulario_añadir">
-        <form action="{{route('insertar')}}" method="post">
+        <form action="{{route('insertar')}}" enctype="multipart/form-data" method="POST">
         @csrf
             <label>Tienda: </label>
             <select name="id_tienda">
@@ -56,19 +56,19 @@
             @endforeach
             </select>
             <br>
-            <label class="trn" data-trn-key="nombre_producto">Nombre del Producto:</label><input type="text" name="nombre"><br>
-            <label class="trn" data-trn-key="precio">Precio:</label><input type="text" name="precio"><br>
-            <label class="trn" data-trn-key="form4">Descripcion:</label><textarea name="descripcion"></textarea><br>
-            <label class="trn" data-trn-key="stock">Stock: </label><input type="text" name="stock" id=""><br>
-            <label class="trn" data-trn-key="imagen">Imagen</label><input type="file" name="imagen" id=""><br>
-            <label class="trn" data-trn-key="enlace">Enlace</label><input type="text" name="link" id=""><br>
-            <input type="submit" name="enviar" value="Enviar">
+            <label class="trn" data-trn-key="nombre_producto">Nombre del Producto:</label><input type="text" id="nombre_producto" name="nombre" ><br>
+            <label class="trn" data-trn-key="precio">Precio:</label><input type="number" name="precio" id="precio_producto" step=".01"><br>
+            <label class="trn" data-trn-key="form4">Descripcion:</label><textarea name="descripcion" id="descripcion_producto"></textarea><br>
+            <label class="trn" data-trn-key="stock">Stock: </label><input type="number" name="stock" id="stock_producto"><br>
+            <label class="trn" data-trn-key="imagen">Imagen</label><input type="file" name="imagen" id="imagen_producto"><br>
+            <label class="trn" data-trn-key="enlace">Enlace</label><input type="url" name="link" id="link_producto"><br>
+            <input type="submit" name="enviar" value="Enviar" id="boton_enviar">
             </div>
             </form>
         </div>
     </div>
     
-
+    <script src="javascript/validacion_insertar.js"></script>
 <div id="footer">
 <div><img src="imagenes/fotos_ballonti/logo.gif"></div>
         <div id="mini" class="trn" data-trn-key="footer">A sólo 10 minutos de Bilbao, C.C. Ballonti es mucho más que un espacio para realizar tus compras, es un lugar donde el tiempo de ocio se llena de emoción para toda la familia...</div>

@@ -103,7 +103,7 @@
         display: inline-block;
         height: 3em;
         width: 2em;
-        margin-left: 15%;
+        margin-left: 5%;
     }
     
     #imgMenu {
@@ -145,15 +145,14 @@
     #paginas {
         display: flex;
         width: 70%;
-        height: 22em;
         flex-direction: column;
         background-color: #CDCDCD;
+        padding-bottom: 5%;
     }
     
     .servicios {
         height: 80%;
         width: 25%;
-        border: solid;
         margin: auto;
         border-radius: 2em;
     }
@@ -165,8 +164,8 @@
     }
     
     .serImg {
-        width: 100%;
-        height: 100%;
+        width: 15em;
+        height: 15em;
         border-radius: 1.7em;
     }
     
@@ -329,7 +328,7 @@
         justify-content: space-between;
         height: 100%;
         padding-top: 4%;
-        padding-bottom: 4%;
+        padding-bottom: 10%;
     }
     
     #modificar_stock {
@@ -494,6 +493,7 @@
         display: flex;
         flex-direction: column;
         align-content: center;
+        padding-left: 2%;
     }
     /*Ocio*/
     
@@ -617,12 +617,17 @@
         background-color: gray;
     }
     
+    #formulario_elegir_tienda {
+        padding-bottom: 20%;
+    }
+    
     @media (max-width: 700px) {
         #cuadrados {
             flex-direction: column;
             align-items: space-between;
-            height: 10em;
+            height: 30%;
             margin-bottom: 10em;
+            padding-bottom: 5%;
         }
         #paginas {
             height: 30em;

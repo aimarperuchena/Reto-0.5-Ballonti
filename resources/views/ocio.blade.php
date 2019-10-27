@@ -55,7 +55,7 @@
 		</div>
 
 	</div>
-<br>
+
 
 	
 	
@@ -69,7 +69,7 @@
 			<img src="imagenes/bolera/bolera1.jpg" id="boleraImg">
 		</div>
 		
-<br>
+
 
 	
 	

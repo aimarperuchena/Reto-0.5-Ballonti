@@ -133,9 +133,9 @@ var dict = {
         en: "INSERT PRODUCT"
     },
     "form2": {
-        es: "Nombre del Producto:",
-        eus: "Produktuaren Izena:",
-        en: "Product name:"
+        es: "Nombre:",
+        eus: "Izena:",
+        en: "Name:"
     },
     "form3": {
         es: "Precio:",
