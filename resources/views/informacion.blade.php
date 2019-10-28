@@ -64,12 +64,10 @@
 				<ul>
 					<li><b class="trn" data-trn-key="horario1">Horario Comercial</b></li>-<label class="trn" data-trn-key="horario2"> De Lunes a Sábado de 10 a 22h.</label>
 
-					<li><b class="trn" data-trn-key="horario3">Horario de Hipermercado</b></li>- <label class="trn" data-trn-key="horario2">De Lun. a Sáb. de 10 a 22h.</label>
 					<li><b class="trn" data-trn-key="horario4">Horario de Restauracion</b></li>- <label class="trn" data-trn-key="horario5">De Domingo a Jueves hasta las 02h.</label><br>
-						- <label class="trn" data-trn-key="horario6">Viernes, Sábados y Vísperas de Festivos hasta las 03h.</label>
 				</ul>
 			</div>
-			<div class="servicios info_map"><a href="localizacion"><img src="imagenes/maps.png" class="serImg"></a></div>
+			<div class="servicios info_map"><a href="localizacion"><img src="imagenes/maps.png" class="serImg" style="padding-bottom:10%;"></a></div>
 			</div>
 		</div>
 	
