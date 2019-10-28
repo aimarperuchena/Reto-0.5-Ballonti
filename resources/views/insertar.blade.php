@@ -49,15 +49,15 @@
         <div id="formulario_añadir">
         <form action="{{route('insertar')}}" enctype="multipart/form-data" method="POST">
         @csrf
-            <label>Tienda: </label>
+            <label class="trn" data-trn-key="tiendas">Tiendas: </label>
             <select name="id_tienda">
             @foreach($tiendas as $tienda)
                 <option value="{{$tienda->id}}">{{$tienda->nombre}}</option>
             @endforeach
             </select>
             <br>
-            <label class="trn" data-trn-key="nombre_producto">Nombre del Producto:</label><input type="text" id="nombre_producto" name="nombre" ><br>
-            <label class="trn" data-trn-key="precio">Precio:</label><input type="number" name="precio" id="precio_producto" step=".01"><br>
+            <label class="trn" data-trn-key="form2">Nombre:</label><input type="text" id="nombre_producto" name="nombre" ><br>
+            <label class="trn" data-trn-key="form3">Precio:</label><input type="number" name="precio" id="precio_producto" step=".01"><br>
             <label class="trn" data-trn-key="form4">Descripcion:</label><textarea name="descripcion" id="descripcion_producto"></textarea><br>
             <label class="trn" data-trn-key="stock">Stock: </label><input type="number" name="stock" id="stock_producto"><br>
             <label class="trn" data-trn-key="imagen">Imagen</label><input type="file" name="imagen" id="imagen_producto"><br>
